@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "productions",
+  "info": {
+    "singularName": "production",
+    "pluralName": "productions",
+    "displayName": "production"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "info-block.info-block"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "price_per_meter": {
+      "type": "integer",
+      "required": true
+    },
+    "additional_info": {
+      "type": "dynamiczone",
+      "components": [
+        "product-field.product-field"
+      ]
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

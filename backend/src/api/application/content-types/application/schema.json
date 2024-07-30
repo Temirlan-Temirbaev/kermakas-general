@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "application",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phone": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\+7\\s?\\d{3}\\s?\\d{3}\\s?\\d{4}$"
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "mail": {
+      "type": "email",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
